@@ -1,6 +1,6 @@
 - type: entity
   id: ActionOpenAiLawSelector
-  parent: BaseInstantAction
+  parent: BaseAction
   name: select-law-set-action-name
   description: select-law-set-action-desc
   components:
