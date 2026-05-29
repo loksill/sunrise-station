@@ -6,6 +6,6 @@
   components:
   - type: InstantAction
     icon:
-      sprite: Interface/Actions/ai_laws.rsi
+      sprite: _Sunrise/Actions/actions_ai.rsi
       state: icon
     event: !type:OpenAiLawSelectorActionEvent
