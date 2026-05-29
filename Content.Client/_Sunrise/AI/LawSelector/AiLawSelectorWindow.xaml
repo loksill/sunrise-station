@@ -1,0 +1,10 @@
+<DefaultWindow xmlns="https://spacestation14.io"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:cc="clr-namespace:Robust.Client.UserInterface.CustomControls"
+                  x:Class="Content.Client._Sunrise.AI.LawSelector.AiLawSelectorWindow"
+                  Title="Выбор набора законов ИИ"
+                  SetSize="450 550">
+    <ScrollContainer HorizontalExpand="True" VerticalExpand="True">
+        <BoxContainer x:Name="LawsContainer" Orientation="Vertical" SeparationOverride="15" Margin="10"/>
+    </ScrollContainer>
+</DefaultWindow>
