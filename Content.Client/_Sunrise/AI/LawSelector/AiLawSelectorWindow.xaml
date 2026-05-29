@@ -5,6 +5,6 @@
                   Title="Выбор набора законов ИИ"
                   SetSize="450 550">
     <ScrollContainer HorizontalExpand="True" VerticalExpand="True">
-        <BoxContainer x:Name="LawsContainer" Orientation="Vertical" SeparationOverride="15" Margin="10"/>
+        <BoxContainer Name="LawsContainer" Orientation="Vertical" SeparationOverride="15" Margin="10"/>
     </ScrollContainer>
 </DefaultWindow>
