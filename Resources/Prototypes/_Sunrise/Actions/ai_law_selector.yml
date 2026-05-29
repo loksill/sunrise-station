@@ -1,0 +1,6 @@
+- type: instantAction
+  id: ActionOpenAiLawSelector
+  name: select-law-set-action-name
+  description: select-law-set-action-desc
+  icon: /Textures/Interface/Actions/ai_laws.rsi/icon.png
+  event: !type:OpenAiLawSelectorActionEvent
