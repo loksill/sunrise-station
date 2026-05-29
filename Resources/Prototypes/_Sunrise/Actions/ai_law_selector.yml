@@ -7,5 +7,5 @@
   - type: InstantAction
     icon:
       sprite: _Sunrise/Actions/actions_ai.rsi
-      state: icon
+      state: change_laws
     event: !type:OpenAiLawSelectorActionEvent
