@@ -80,11 +80,17 @@ public sealed class AiLawSelectorSystem : EntitySystem
 
     private void OnActionTriggered(EntityUid uid, AiLawSelectorComponent component, OpenAiLawSelectorActionEvent args)
     {
-        if (!_ui.HasUi(uid, AiLawSelectorUiKey.Key))
-            return;
+        var performer = args.Performer;
 
-        _ui.TryToggleUi(uid, AiLawSelectorUiKey.Key, uid);
-        _ui.SetUiState(uid, AiLawSelectorUiKey.Key, new AiLawSelectorBuiState(_availableLawSets));
+        _ui.TryOpenUi(uid, AiLawSelectorUiKey.Key, performer);
+
+        args.Handled = true;
+
+        //if (!_ui.HasUi(uid, AiLawSelectorUiKey.Key))
+        //    return;
+
+        //_ui.TryToggleUi(uid, AiLawSelectorUiKey.Key, uid);
+        //_ui.SetUiState(uid, AiLawSelectorUiKey.Key, new AiLawSelectorBuiState(_availableLawSets));
     }
 
     private void OnLawSetSelected(EntityUid uid, AiLawSelectorComponent component, AiLawSelectorSelectMessage args)
