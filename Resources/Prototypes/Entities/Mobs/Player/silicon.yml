@@ -38,6 +38,7 @@
     - ActionJumpToCore
     - ActionSurvCameraLights
     - ActionAIViewLaws
+    - ActionOpenAiLawSelector # Sunrise-edit
   - type: UserInterface
     interfaces:
       enum.RadarConsoleUiKey.Key:
